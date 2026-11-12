@@ -116,7 +116,7 @@ button { font: inherit; }
 .upcoming-card .card-top { position: relative; z-index: 1; }
 .upcoming-card .card-top span { color: #7e92ff; }
 .upcoming-card .card-top em { color: #697384; }
-.upcoming-copy { position: relative; z-index: 1; margin-top: auto; max-width: 620px; }
+.upcoming-copy { position: relative; z-index: 1; margin-top: 0; max-width: 620px; }
 .upcoming-copy h3 { font-size: clamp(40px,5vw,64px); line-height: 1.05; letter-spacing: -.055em; }
 .upcoming-copy p { margin-top: 17px; color: #aab2bf; font-size: 17px; line-height: 1.9; }
 
@@ -648,5 +648,39 @@ footer {
 
   .account-number {
     font-size: 22px !important;
+  }
+}
+
+
+/* v15: align upcoming content to top + compact candidate line */
+.upcoming-card .card-top {
+  margin-bottom: 24px;
+}
+
+.upcoming-copy {
+  margin-top: 0;
+}
+
+.upcoming-meta {
+  margin-top: 12px !important;
+  color: #7f8999 !important;
+  font-size: 13px !important;
+  line-height: 1.65 !important;
+}
+
+.upcoming-meta strong {
+  color: #929cad;
+  font-weight: 750;
+}
+
+@media (max-width: 680px) {
+  .upcoming-card .card-top {
+    margin-bottom: 20px;
+  }
+
+  .upcoming-meta {
+    margin-top: 10px !important;
+    font-size: 12px !important;
+    line-height: 1.6 !important;
   }
 }
